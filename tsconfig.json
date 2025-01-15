@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*", "test/**/*"], // Include both source and test files
+  "exclude": ["node_modules"]
+}
