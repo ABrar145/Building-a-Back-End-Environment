@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../src/app'; // Adjust the path to your app.ts file
+import app from '../src/app.ts'; // Adjust the path to your app.ts file
 
 describe('GET /', () => {
   it('should return a welcome message', async () => {
