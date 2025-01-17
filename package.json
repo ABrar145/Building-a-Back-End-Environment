@@ -2,6 +2,7 @@
   "name": "building-a-back-end-environment",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },

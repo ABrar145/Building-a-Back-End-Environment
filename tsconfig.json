@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ESNext",
+    "module": "ESNext",  // Use ES Modules for compatibility with modern JS
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "esModuleInterop": true,  // Ensure compatibility with CommonJS and ES Modules
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*", "test/**/*"], // Include both source and test files
+  "include": ["src/**/*", "test/**/*"],
   "exclude": ["node_modules"]
 }
