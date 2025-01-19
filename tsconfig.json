@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -121,6 +122,8 @@
 //   },
 //   "include": ["src/**/*", "test/**/*"],
 //   "exclude": ["node_modules"],
+=======
+>>>>>>> origin/main
     "compilerOptions": {
         "target": "ES6",
         "module": "commonjs",
@@ -143,5 +146,8 @@
     },
     "include": ["src/**/*", "test/**/*", "config/**/*"],
     "exclude": ["node_modules", "dist"]
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
 }
