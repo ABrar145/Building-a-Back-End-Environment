@@ -1,14 +1,15 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import routes from './routes'; // Your other routes
+import healthRoutes from './routes/health'; // Health check routes
+import setupSwagger from './swagger';
 
 const app = express();
 
-// Define basic routes
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, world!');
-});
+app.use(express.json());
+app.use('/api', routes);
+app.use('/api/v1/health', healthRoutes); // Add health check routes here
 
-app.get('/api', (req: Request, res: Response) => {
-  res.send('Welcome to the API!');
-});
+// Setup Swagger
+setupSwagger(app);
 
 export default app;

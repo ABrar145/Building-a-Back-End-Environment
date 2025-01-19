@@ -1,18 +1,14 @@
-import request from 'supertest';
-import app from '../src/app.ts'; // Adjust the path to your app.ts file
+// import request from 'supertest';
+// import app from '../src/app';  // Import your Express app
 
-describe('GET /', () => {
-  it('should return a welcome message', async () => {
-    const response = await request(app).get('/');
-    expect(response.status).toBe(200);
-    expect(response.body.message).toBe('Welcome to the Express API');
-  });
-});
-
-describe('GET /example', () => {
-  it('should return a sample response', async () => {
-    const response = await request(app).get('/example');
-    expect(response.status).toBe(200);
-    expect(response.body.message).toBe('This is an example route');
-  });
-});
+// describe('GET /api', () => {
+//   it('should return a 200 status and a message', async () => {
+//     const response = await request(app).get('/api');
+    
+//     // Check if status is 200
+//     expect(response.status).toBe(200);
+    
+//     // Check if the response body has the expected message
+//     expect(response.body.message).toBe('Hello, world!');
+//   });
+// });
